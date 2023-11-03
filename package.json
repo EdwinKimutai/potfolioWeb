@@ -1,0 +1,11 @@
+{
+  "name": "clientspotfolioweb",
+  "version": "1.0.0",
+  "description": "A basic potfolio website using vanila javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Edwin Kimutai",
+  "license": "ISC"
+}
