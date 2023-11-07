@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Acme", sans-serif;
+  color: black;
+}
+body {
+  align-items: center;
+  height: 100%;
+}
+.header-container {
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 240px;
+  top: 0;
+}
+.top_info {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.client-name {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.top-bottom-text {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 4rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20rem;
+}
+.links a {
+  text-decoration: none;
+  padding: 1.5rem;
+  font-size: 14px;
+  color: #181818;
+}
+.top-bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 48px;
+}
+.social_handles {
+  display: flex;
+  margin-left: -20rem;
+  margin-right: -15rem;
+}
+.icons {
+  padding: 0.7rem;
+}
+.social-icons {
+  width: 30px;
+  height: auto;
+}
+.about-client {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.About-text {
+  font-size: 20px;
+  text-align: center;
+  margin: 10rem;
+}
+.Clients-name {
+  text-decoration: none;
+  color: #181818;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+.clients-job {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.footer-icons img {
+  width: 38px;
+  height: auto;
+}
+.section-01 {
+  margin-top: 300px;
+}
+.foundation-text {
+  height: 100vh;
+  text-align: center;
+}
+.foundation-text h1 {
+  margin-bottom: 10rem;
+  font-family: "Open Sans", sans-serif;
+}
+.foundation-text p {
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 18px;
+}
+.navbar-custom {
+  height: 48px;
+}
+.nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+.contact-form {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 985px) {
+  .top-bottom-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* .navbar-custom {
+    width: 100vw;
+  } */
+  .social_handles {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar-expand-lg.show .navbar-collapse {
+    max-height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+  .about-client {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
