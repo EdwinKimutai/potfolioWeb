@@ -13,7 +13,7 @@
   <body>
     <header class="header-container">
       <div class="top_info">
-        <a href="" class="client-name">
+        <a href="index.html" class="client-name">
           <h1 class="Clients-name">Sylvia Imbuhila Buleti.</h1>
         </a>
         <div class="top-bottom-text">
@@ -22,7 +22,34 @@
       </div>
       <div class="top-bottom-wrapper">
         <div class="links">
-          <div class="absolute-navbar-links">
+          <section id="header">
+            <div class="header container">
+              <div class="nav-bar">
+                <div class="brand">
+                  <a>
+                    <h1><span>S</span>ILVIA <span>I</span>MBUHIA</h1>
+                  </a>
+                </div>
+                <div class="nav-list">
+                  <div class="hamburger">
+                    <div class="bar"></div>
+                  </div>
+                  <ul>
+                    <li><a href="index.html" data-after="Home">Home</a></li>
+                    <li>
+                      <a href="Foundation.html" data-after="Service"
+                        >Foundation</a
+                      >
+                    </li>
+                    <li>
+                      <a href="Contacts.html" data-after="Projects">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <div class="absolute-navbar-links">
             <nav
               class="navbar-custom navbar navbar-expand-lg navbar-light bg-light"
             >
@@ -54,7 +81,7 @@
                 </ul>
               </div>
             </nav>
-          </div>
+          </div> -->
         </div>
         <div class="social_handles">
           <div class="icons">
@@ -75,34 +102,65 @@
     <section class="section-01">
       <div class="container contact-wrapper">
         <div class="contact-form">
-          <div class="title"><h2>GET IN TOUCH</h2></div>
+          <div class="Form-elements">
+            <div class="title"><h2>GET IN TOUCH</h2></div>
+            <div>
+              <form action="process_form.php" method="post">
+                <div class="FWwrapper">
+                  <div class="FWelements">
+                    <div><label for="full_name">Full Name *</label></div>
+                    <div class="input-hover">
+                      <input
+                        type="text"
+                        id="full_name"
+                        name="full_name"
+                        required
+                      />
+                    </div>
+                    <br />
+                  </div>
 
-          <form action="process_form.php" method="post">
-            <label for="full_name">Full Name:</label>
-            <input type="text" id="full_name" name="full_name" required /><br />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br />
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required /><br />
-            <label for="message_type">Type of Message:</label>
-            <select id="message_type" name="message_type">
-              <option value="General Inquiry">General Inquiry</option>
-              <option value="Support Request">Support Request</option>
-              <option value="Feedback">Feedback</option>
-              <option value="Other">Other</option></select
-            ><br />
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea
-            ><br />
-            <input type="submit" value="Submit" />
-          </form>
+                  <div class="FWelements">
+                    <div><label for="email">Email *</label></div>
+                    <div class="input-hover">
+                      <input type="email" id="email" name="email" required />
+                    </div>
+                    <br />
+                  </div>
+                </div>
+                <div class="FWwrapper Swrapper">
+                  <div><label for="subject">Subject *</label></div>
+                  <div class="input-hover">
+                    <input type="text" id="subject" name="subject" required />
+                  </div>
+                  <br />
+                </div>
+                <div class="FWwrapper Twrapper">
+                  <label for="message_type">Type your Message here *</label>
+                  <div class="input-hover">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <br />
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" value="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="imgcontainer">
           <img
+            class="contact_img"
             src="asset/contactimage.png"
             alt=""
-            width="756px"
-            height="783px"
+            width="656px"
+            height="643px"
           />
         </div>
       </div>
@@ -141,5 +199,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
