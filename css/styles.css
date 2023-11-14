@@ -17,7 +17,7 @@ html {
 }
 body {
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 .header-container {
@@ -385,7 +385,6 @@ h2 {
 }
 .footer-icons img {
   width: 38px;
-  height: auto;
 }
 .section-01 {
   margin-top: 250px;
@@ -740,9 +739,10 @@ form {
 
   .About-text {
     font-size: 1.5rem;
-    text-align: center;
+
     margin: 0rem;
     padding: 0rem;
+    text-align: left;
   }
   .Clients-name {
     text-decoration: none;
@@ -819,7 +819,6 @@ form {
   }
   .footer-icons img {
     width: 20px;
-    height: auto;
   }
   .About-text {
     font-size: 1.4rem;
@@ -834,4 +833,134 @@ form {
   form label {
     font-size: 10px;
   }
+  .about-client-link {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .about-client-link h5 {
+    font-size: 2rem;
+  }
+  .about-bellow-text {
+    display: block;
+  }
+  .about-bellow-text p {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+  }
+  .form-itself {
+    gap: 1rem;
+  }
+  footer {
+    display: none;
+  }
+  .section-01 {
+    margin-bottom: 30px;
+  }
+  .about-page-text {
+    display: block;
+    gap: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .about-page-text h1,
+  .about-page-text h2 {
+    font-size: 2rem;
+    line-height: 25px;
+    padding-bottom: 2rem;
+    font-weight: 400;
+  }
+  .about-page-text h2 {
+    text-align: center;
+  }
+  .about-page-text p,
+  .about-page-text p {
+    font-size: 1.2rem;
+  }
+  /* galary styling */
+  .image {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 2%;
+    border-radius: 0rem;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5 {
+    border: 1px solid transparent;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 1%;
+    border-radius: 2rem;
+    background-color: white;
+  }
+  .image1 a,
+  .image2 a,
+  .image3 a,
+  .image4 a,
+  .image5 a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+  }
+  .image1 a:hover,
+  .image2 a:hover,
+  .image3 a:hover,
+  .image4 a:hover,
+  .image5 a:hover {
+    text-decoration: none;
+    color: rgb(112, 109, 109);
+    cursor: pointer;
+  }
+  .image1:hover,
+  .image2:hover,
+  .image3:hover,
+  .image4:hover,
+  .image5:hover {
+    border: 1px solid transparent;
+    margin: 20px;
+    padding: 2%;
+    border-radius: 2rem;
+    background-color: #f8f9fa;
+  }
+  .row1wrapper {
+    display: block;
+    gap: 4rem;
+  }
+  .row2wrapper {
+    display: block;
+
+    gap: 4rem;
+  }
+  .row3wrapper {
+    display: block;
+
+    gap: 4rem;
+  }
+  .foundation-header {
+    margin-top: 10rem;
+  }
+  .foundation-header h1 {
+    margin-bottom: 1rem;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 10%;
+    text-align: left;
+   
+  }
+  .galary-customisation {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0%;
+  }
+  /* end of galary styling */
 }
